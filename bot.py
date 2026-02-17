@@ -79,7 +79,7 @@ async def calculate(ctx, *, question: str):
         async with ctx.typing():
             # Create Gemini model with code execution enabled
             model = genai.GenerativeModel(
-                model_name='gemini-1.5-flash',
+                model_name='models/gemini-2.5-flash',
                 system_instruction=SYSTEM_PROMPT,
                 tools='code_execution'
             )
